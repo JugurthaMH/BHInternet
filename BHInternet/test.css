@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* Style global */
+body,html {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.telephone {
+    position: fixed;      /* Positionne le bouton de manière fixe par rapport à la fenêtre */
+    z-index: 1000;        /* Assure que le bouton sera au-dessus des autres éléments */
+    bottom: 0px;          /* Positionne le bouton à 20px du bas de l'écran */
+    right: 10px;          /* Positionne le bouton à 20px du côté droit de l'écran */
+    background-color: rgb(186, 56, 73); /* Couleur du bouton */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    transition: background-color 0.3s;
+    border-top-left-radius: 10px; /* Arrondir le coin supérieur gauche */
+    border-top-right-radius: 10px; /* Arrondir le coin supérieur droit */
+}
+
+.telephone:hover {
+    background-color: rgb(221, 92, 109);; /* Changement de couleur au survol */
+    color: black;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////////////// Header //////////////////////////////////////////////////*/
+.vendre {
+    background-color: rgb(250, 213, 85); /* Correction de la couleur en RGB */
+    text-align: center; /* Centrer le texte horizontalement */
+    display: flex;
+    justify-content: center; /* Centrer horizontalement avec Flexbox */
+    align-items: center; /* Centrer verticalement avec Flexbox */
+    height: 50px; /* Ajustez la hauteur du header si nécessaire */
+    box-shadow: 0 10px 6px rgba(125, 64, 25, 0.9); /* Ombre subtile */
+    position: relative; /* Permet à .naviguer de se positionner derrière */
+}
+
+.naviguer {
+    background: black;
+    height: 140px;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribution des éléments (gauche, centre, droite) */
+    max-width: 1200px; /* Largeur maximale du container */
+    width: 100%;
+    margin: 0 auto; /* Centrer le container horizontalement */
+    padding: 40px 20px; /* Espacement horizontal */
+}
+
+.container a img {
+    max-height: 50px; /* Hauteur de l'image */
+    width: auto; /* Garder les proportions de l'image */
+}
+
+nav {
+    flex-grow: 1; /* Prend tout l'espace restant entre l'image et le bouton */
+    text-align: center; /* Centrer les éléments de la navigation */
+}
+
+nav ul {
+    list-style-type: none; /* Retirer les puces */
+    margin: 0;
+    padding: 0;
+    display: inline-flex; /* Afficher les éléments en ligne */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espacement entre les éléments de navigation */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Couleur au survol */
+}
+
+.devis {
+    background-color: rgb(186, 56, 73); /* Couleur du bouton */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.devis:hover {
+    background-color: rgb(221, 92, 109);; /* Changement de couleur au survol */
+    color: black;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*///////////////////////////////////////////  Centre du site ////////////////////////////////////////*/
+.background {
+    background-image: url('download.jpg'); /* Chemin vers ton image */
+    background-size: cover; /* L'image couvre toute la zone */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    height: 100vh; /* Hauteur de 100% de la hauteur de la fenêtre */
+    width: 100%; /* Largeur complète */
+    display: flex;
+    justify-content: center; /* Centre horizontalement les rectangles */
+    align-items: center; /* Centre verticalement les rectangles */
+    gap: 30px; /* Espace entre les deux rectangles */
+    margin-top: -130px;
+}
+
+.rectangle_texte {
+    background-color: rgba(0, 0, 0, 0.8); /* Noir avec transparence */
+    text-align: center; /* Centre le texte à l'intérieur */
+    color: white; /* Texte en blanc */
+    font-size: 22px;
+    font-family: 'Poppins',sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre légère */
+    width: 600px; /* Largeur fixe des rectangles */
+    height: 160px; /* Hauteur fixe pour les rectangles */
+    letter-spacing: 10px; /* Ajoute de l'espace entre les lettres */
+}
+
+.rectangle {
+    background-color: rgba(0, 0, 0, 0.8); /* Noir avec transparence */
+    text-align: center; /* Centre le texte à l'intérieur */
+    color: white; /* Texte en blanc */
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre légère */
+    width: 600px; /* Largeur fixe des rectangles */
+    height: 500px; /* Hauteur fixe pour les rectangles */
+    margin-top: 10%;
+}
+
+#Titre {
+    font-size: 28px;
+    letter-spacing: 5px; /* Ajoute de l'espace entre les lettres */
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;            /* Utilise Flexbox pour aligner horizontalement */
+    gap: 20px;                /* Ajoute un espacement entre les champs */
+    justify-content: center;  /* Centre les champs horizontalement */
+    align-items: center;      /* Aligne les champs verticalement au centre */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;   /* Les labels et inputs restent empilés verticalement */
+    padding: 10px;
+}
+
+label {
+    margin-bottom: 5px;       /* Espace entre le label et l'input */
+    font-size: 16px;
+    color: white;
+    text-align: left;
+}
+
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 580px;
+    font-size: 16px;
+    background-color: #fff;   /* Fond blanc pour le menu déroulant */
+    color: #333;              /* Couleur du texte */
+    cursor: pointer;
+} 
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 250px; /* Largeur des champs de texte */
+    font-size: 16px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*///////////////////////////////////////////  Bas du site ////////////////////////////////////////*/
+/* Section avec fond blanc */
+.section-blanche {
+    background-color: white; /* Fond blanc */
+    height: 60vh; /* Hauteur de la section égale à la hauteur de la fenêtre */
+    display: flex; /* Utilisation de Flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+/* Style du texte centré */
+.texte-centre {
+    text-align: center; /* Centrer le texte */
+    font-size: 24px; /* Taille de police */
+    color: #333; /* Couleur du texte */
+    padding: 200px; /* Un peu d'espace autour du texte */
+}
+
+h2 {
+    font-size: 32px; /* Taille du titre */
+    font-weight: bold; /* Titre en gras */
+    margin-bottom: 20px; /* Espacement sous le titre */
+    text-align: center; /* Centrer le texte */
+    position: relative; /* Nécessaire pour les pseudo-éléments */
+    font-family: 'Roboto', sans-serif;
+}
+
+h2::before, h2::after {
+    content: ""; /* Nécessaire pour afficher un élément vide */
+    position: absolute;
+    top: 50%;
+    width: 10%; /* Largeur des traits (ajuste selon ton besoin) */
+    height: 2px; /* Épaisseur des traits */
+    background-color: black; /* Couleur des traits */
+    transform: translateY(-50%); /* Centrer verticalement */
+}
+
+h2::before {
+    left: 0; /* Place le premier trait à gauche */
+}
+
+h2::after {
+    right: 0; /* Place le deuxième trait à droite */
+}
+
+
+#description {
+    font-size: 15px; /* Taille de la description */
+    line-height: 1.8; /* Hauteur de ligne pour espacer un peu le texte */
+    color: #808080; /* Couleur gris (tu peux aussi utiliser "gray") */
+}
+
+.section-blanche2 {
+    background-color: white; /* Fond blanc */
+    height: 20vh; /* Hauteur de la section égale à la hauteur de la fenêtre */
+    display: flex; /* Utilisation de Flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+.section-blanche3 {
+    background-color: white; /* Fond blanc */
+    height: 70vh; /* Hauteur de la section égale à la hauteur de la fenêtre */
+    display: flex; /* Utilisation de Flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+/* Conteneur des images */
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Centrer les images horizontalement */
+    gap: 20px; /* Espacement entre les images */
+}
+
+/* Style des images */
+.image-item {
+    width: 300px; /* Taille des images (carré de 200px) */
+    height: 300px; /* Hauteur égale à la largeur pour un carré */
+    overflow: hidden; /* Masquer les parties qui dépassent */
+    border-radius: 10px; /* Optionnel : bord arrondi pour un effet plus doux */
+    transition: transform 0.3s ease; /* Applique une transition douce lors du changement de taille */
+}
+
+.image-item img {
+    width: 100%; /* L'image occupe toute la largeur du div */
+    height: 100%; /* L'image occupe toute la hauteur du div */
+    object-fit: cover; /* L'image couvre toute la zone sans déformation */
+}
+
+.image-item:hover {
+    transform: scale(1.1); /* Agrandit l'image à 110% de sa taille originale */
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
